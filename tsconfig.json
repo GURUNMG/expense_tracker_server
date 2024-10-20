@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                   // Latest JavaScript version
+    "module": "ESNext",                   // Use ES modules
+    "moduleResolution": "node",           // Resolve modules like Node.js
+    "outDir": "./dist",                   // Output directory
+    "rootDir": "./src",                   // Source directory
+    "strict": true,                       // Strict type-checking
+    "esModuleInterop": true,              // Support for CommonJS modules
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": {
+    "esm": true               // Enable ESM support in ts-node
+  }
+}
