@@ -2,7 +2,7 @@ const {createExpense} = require("../services/expenseService");
 
 const createNewExpense = async (req, res) => {
   const { description, amount, category } = req.body;
-  const userId = req.user.id;
+  const userId = req.userId;
 
   try {
     const expense = await createExpense({

@@ -9,7 +9,7 @@ const login = async (email, password) => {
     throw new Error("Invalid credentials");
   }
   const token = jwt.sign({ userId: user._id }, config.jwtSecret, {
-    expiresIn: "1h",
+    expiresIn: "1h"
   });
   return { user, token };
 };
